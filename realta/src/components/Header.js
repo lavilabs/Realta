@@ -24,6 +24,7 @@ const Wrapper = styled.div`
     margin-left: 40px;
     margin-right: 40px;
     align-items: center;
+    font-family: 'Sora', sans-serif;
 `;
 
 const Title = styled.h1`
