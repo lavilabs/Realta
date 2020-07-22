@@ -6,6 +6,11 @@ function About() {
 		<>
 			<Wrapper>
 				<Header>About Us</Header>
+				<Info>
+					Since 2010 Realta has been leading the charge in supplying airlines
+					with proper cleaning products to maintain the vital components of
+					planes.
+				</Info>
 			</Wrapper>
 		</>
 	);
@@ -16,10 +21,18 @@ const Wrapper = styled.div`
 	color: #39683c;
     font-size: 40px;
     margin-top: 15px;
+	margin-left: 40px;
+
 `;
 
 const Header = styled.div`
-	margin-left: 40px;
+	/* margin-left: 40px; */
+`;
+
+const Info = styled.p`
+	font-size: 22px;
+	color: darkgray;
+	margin-top: 5px;
 `;
 
 export default About;

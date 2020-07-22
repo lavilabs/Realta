@@ -2,51 +2,18 @@ export default {
 	products: [
 		{
 			id: 1,
-			name: "placeholder",
+			name: "iCa500",
 			image: "urlPlaceHolder",
-			price: 99,
 		},
 		{
 			id: 2,
-			name: "placeholder",
+			name: "iCa10x24",
 			image: "urlPlaceHolder",
-			price: 99,
 		},
 		{
 			id: 3,
-			name: "placeholder",
+			name: "70% Wipes",
 			image: "urlPlaceHolder",
-			price: 99,
-		},
-		{
-			id: 4,
-			name: "placeholder",
-			image: "urlPlaceHolder",
-			price: 99,
-		},
-		{
-			id: 5,
-			name: "placeholder",
-			image: "urlPlaceHolder",
-			price: 99,
-		},
-		{
-			id: 6,
-			name: "placeholder",
-			image: "urlPlaceHolder",
-			price: 99,
-		},
-		{
-			id: 7,
-			name: "placeholder",
-			image: "urlPlaceHolder",
-			price: 99,
-		},
-		{
-			id: 8,
-			name: "placeholder",
-			image: "urlPlaceHolder",
-			price: 99,
 		},
 	],
 };
