@@ -16,6 +16,8 @@ function Footer() {
 const Wrapper = styled.div`
 	position: absolute;
 	bottom: 5px;
+    font-family: 'Sora', sans-serif;
+
 	left: 45%;
 `;
 

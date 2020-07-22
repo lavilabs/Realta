@@ -1,16 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import logo from "../work.svg";
+
 
 function Header() {
 	return (
 		<>
 			<Wrapper>
-				<Title>Realta || Logistics & Warehousing</Title>
+				<Title>Realta <Logo src={logo} /> Logistics & Warehousing</Title>
+
 				<Nav>
                     <A href="#">Home</A>
                     <A href="#">About</A>
-                    <A href="#">Contact</A>
                     <A href="#">Products</A>
+                    <A href="#">Contact</A>
                 </Nav>
 			</Wrapper>
 		</>
@@ -25,10 +28,20 @@ const Wrapper = styled.div`
     margin-right: 40px;
     align-items: center;
     font-family: 'Sora', sans-serif;
+    color: #39683c;
+    border-bottom: 2px solid #39683c;
+
 `;
 
 const Title = styled.h1`
-    color: #39683c;
+    font-size: 40px;
+    margin-bottom: 2px;
+
+`;
+
+const Logo = styled.img`
+    height: 80px;
+    margin-bottom: -20px;
 `;
 
 const Nav = styled.nav`
@@ -36,8 +49,9 @@ const Nav = styled.nav`
 
 const A = styled.a`
     text-decoration: none;
-    color: #39683c;
     margin: 5px;
+    color: #39683c;
+
 `;
 
 export default Header;
