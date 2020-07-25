@@ -5,7 +5,7 @@ function Contact() {
 	return (
 		<>
 			<Wrapper>
-				<Header>Contact Us</Header>
+				<Header id="contact">Contact Us</Header>
 				<ul>
 					<InfoName>Sheila Whalen</InfoName>
 					<Info>swhaler@realtalw.com</Info>

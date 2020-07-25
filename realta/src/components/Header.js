@@ -11,9 +11,9 @@ function Header() {
 
 				<Nav>
                     <A href="#">Home</A>
-                    <A href="#">About</A>
-                    <A href="#">Products</A>
-                    <A href="#">Contact</A>
+                    <A href="#about">About</A>
+                    <A href="#products">Products</A>
+                    <A href="#contact">Contact</A>
                 </Nav>
 			</Wrapper>
 		</>

@@ -14,11 +14,11 @@ function Footer() {
 }
 
 const Wrapper = styled.div`
-	position: absolute;
-	bottom: 5px;
-    font-family: 'Sora', sans-serif;
-
+	font-family: "Sora", sans-serif;
+	position: fixed;
 	left: 45%;
+	bottom: 5px;
+	/* Make footer push away text it comes into contact with */
 `;
 
 const Logo = styled.img`

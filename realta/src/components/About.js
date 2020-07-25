@@ -5,7 +5,7 @@ function About() {
 	return (
 		<>
 			<Wrapper>
-				<Header>About Us</Header>
+				<Header id="about">About Us</Header>
 				<Info>
 					Since 2010 Realta has been leading the charge in supplying airlines
 					with proper cleaning products to maintain the vital components of

@@ -6,11 +6,13 @@ import styled from "styled-components";
 import About from "./components/About";
 import Products from "./components/Products";
 import Contact from "./components/Contact";
+import Banner from "./components/Banner"
 
 function App() {
 	return (
 		<div>
 			<Header />
+			<Banner />
 			<About />
 			<Products />
 			<Contact />
@@ -18,5 +20,6 @@ function App() {
 		</div>
 	);
 }
+
 
 export default App;
