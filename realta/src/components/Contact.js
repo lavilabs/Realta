@@ -8,8 +8,8 @@ function Contact() {
 				<Header id="contact">Contact Us</Header>
 				<ul>
 					<InfoName>Sheila Whalen</InfoName>
-					<Info>swhaler@realtalw.com</Info>
-					<Info>(514) 733-3223</Info>
+					<InfoEmail href={`mailto:swhaler@realtalw.com`}>swhaler@realtalw.com</InfoEmail>
+					<InfoPhone>(514) 733-3223</InfoPhone>
                     {/* Put onClick() for email and call, email box next to contact maybe? */}
 				</ul>
 			</Wrapper>
@@ -30,8 +30,12 @@ const Header = styled.div`
 	font-size: 40px;
 `;
 
-const Info = styled.li`
+const InfoPhone = styled.li`
     list-style-type: none;
+`;
+
+const InfoEmail = styled.a`
+
 `;
 
 const InfoName = styled.li`
