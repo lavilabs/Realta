@@ -12,6 +12,7 @@ function Products() {
 				<Product>
 					{/* {products[products]} */}
 					<ProductName>iCA500</ProductName>
+					<ProductSubHead>500 Cleaning Wipes - 5" x 7"</ProductSubHead>	
 					<ProductImg src="https://images-na.ssl-images-amazon.com/images/I/71P-47kJqZL._AC_SL1500_.jpg" />
 					<ProductDesc>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -23,7 +24,24 @@ function Products() {
 					</ProductDesc>
 				</Product>
 				<Product>
-					<ProductName>iCA10x24</ProductName>
+					<ProductName>iCXL10</ProductName>
+					<ProductSubHead>24 Boxes of 10 Cleaning Wipes - 9" x 12"</ProductSubHead>
+					<ProductImg src="https://images-na.ssl-images-amazon.com/images/I/71P-47kJqZL._AC_SL1500_.jpg" />
+					<ProductDesc>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+						sagittis neque vitae lectus feugiat, eu pharetra felis rutrum.
+						Integer molestie urna eget auctor blandit. Curabitur varius dolor
+						eros, in eleifend lacus vehicula nec. Praesent a mattis orci. Donec
+						libero sem, consequat vel laoreet eu, faucibus vel augue. Nunc ac
+						ipsum vitae lectus dictum facilisis in vitae nibh.
+					</ProductDesc>
+				</Product>
+				</Wrapper>
+				<Wrapper>
+				<Product>
+					<ProductName>iCXL701PA24 70%</ProductName>
+					<ProductSubHead>8 Boxes of 24 Cleaning Wipes - 9" x 12"</ProductSubHead>
+
 					<ProductImg src="https://images-na.ssl-images-amazon.com/images/I/71P-47kJqZL._AC_SL1500_.jpg" />
 					<ProductDesc>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -35,7 +53,9 @@ function Products() {
 					</ProductDesc>
 				</Product>
 				<Product>
-					<ProductName>70% Wipes</ProductName>
+					<ProductName>iCXL701PA50 70%</ProductName>
+					<ProductSubHead>15 Boxes of 50 Cleaning Wipes - 5" x 7"</ProductSubHead>
+
 					<ProductImg src="https://images-na.ssl-images-amazon.com/images/I/71P-47kJqZL._AC_SL1500_.jpg" />
 					<ProductDesc>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -74,12 +94,18 @@ const Product = styled.div`
 	align-items: center;
 	margin-left: 25px;
 	margin-right: 25px;
+	width: 25%;
 `;
 
 const ProductName = styled.span`
 	font-size: 30px;
 	text-decoration: underline;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
+`;
+
+const ProductSubHead = styled.span`
+	font-size: 18px;
+	padding-bottom: 10px;
 `;
 
 const ProductDesc = styled.p`
