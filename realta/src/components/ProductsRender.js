@@ -1,21 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 import { Data } from "../data.js";
-import ProductRender from './ProductsRender'
 
-function Products() {
-	console.log(Data);
-	// Map over Object.entries(Data).map()?? Render UL / LI
-	return (
-		<>
-			<Header id="products">Products</Header>
-			
-			<ProductRender />
+const ProductRender = () => {
+	return Object.entries(Data).map((value) => {
+		console.log(value);
+		const data = value[1];
+		return (
+			<Li style={{ listStyleType: "none" }}>
+				<Wrapper>
+					<Product>
+						<ProductName>{data.productName}</ProductName>
+						<ProductSubHead>{data.productSubHead}</ProductSubHead>
+						<ProductImg src={data.imgURL} />
+						<ProductDesc>{data.productDesc}</ProductDesc>
+					</Product>
+				</Wrapper>
+			</Li>
+		);
+	});
+};
 
-			
-		</>
-	);
-}
+export default ProductRender;
 
 const Wrapper = styled.div`
 	font-family: "Sora", sans-serif;
@@ -26,14 +32,6 @@ const Wrapper = styled.div`
 	justify-content: space-evenly;
 `;
 
-const Header = styled.div`
-	margin-left: 40px;
-	font-family: "Sora", sans-serif;
-	color: #39683c;
-	font-size: 40px;
-	margin-top: 15px;
-`;
-
 const Product = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -42,6 +40,8 @@ const Product = styled.div`
 	margin-right: 25px;
 	width: 25%;
 `;
+
+const Li = styled.li``;
 
 const ProductName = styled.span`
 	font-size: 30px;
@@ -54,15 +54,13 @@ const ProductSubHead = styled.span`
 	padding-bottom: 10px;
 `;
 
-const ProductDesc = styled.p`
-	font-size: 15px;
-	color: black;
-	text-align: center;
-`;
-
 const ProductImg = styled.img`
 	height: 215px;
 	width: 175px;
 `;
 
-export default Products;
+const ProductDesc = styled.span`
+	font-size: 15px;
+	color: black;
+	text-align: center;
+`;

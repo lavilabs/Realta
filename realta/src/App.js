@@ -6,7 +6,8 @@ import styled from "styled-components";
 import About from "./components/About";
 import Products from "./components/Products";
 import Contact from "./components/Contact";
-import Banner from "./components/Banner"
+import Banner from "./components/Banner";
+import ProductRender from './components/ProductsRender'
 
 function App() {
 	return (
@@ -14,12 +15,13 @@ function App() {
 			<Header />
 			<Banner />
 			<About />
+			{/* <ProductRender /> */}
+
 			<Products />
 			<Contact />
 			<Footer />
 		</div>
 	);
 }
-
 
 export default App;
