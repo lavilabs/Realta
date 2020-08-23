@@ -38,10 +38,12 @@ const Product = styled.div`
 	align-items: center;
 	margin-left: 25px;
 	margin-right: 25px;
-	width: 25%;
+	width: 40%;
 `;
 
-const Li = styled.li``;
+const Li = styled.li`
+	display: inline-block;
+`;
 
 const ProductName = styled.span`
 	font-size: 30px;

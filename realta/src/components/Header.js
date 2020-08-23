@@ -22,11 +22,10 @@ function Header() {
 
 const Wrapper = styled.div`
     display: flex;
-    height: 15%;
     justify-content: space-between;
     margin-left: 40px;
     margin-right: 40px;
-    align-items: center;
+    align-items: baseline;
     font-family: 'Sora', sans-serif;
     color: #39683c;
     border-bottom: 2px solid #39683c;
@@ -50,6 +49,8 @@ const Nav = styled.nav`
 const A = styled.a`
     text-decoration: none;
     margin: 5px;
+    font-size: 25px;
+    margin-bottom: -20px;
     color: #39683c;
 
 `;
