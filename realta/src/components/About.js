@@ -31,7 +31,7 @@ const Header = styled.div`
 
 const Info = styled.p`
 	font-size: 22px;
-	color: darkgray;
+	color: black;
 	margin-top: 5px;
 `;
 

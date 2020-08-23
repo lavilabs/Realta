@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import logo from '../work.svg'
 
 function Banner() {
     return (
 
         <Wrapper>
-            <BannerImg src="https://images.unsplash.com/photo-1506269085878-5c33839927e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
-            <Text> ↑ Placeholder IMG for 70% Wipes ↑ </Text>
+            <Img src={logo} />
+            <Text>iCloth Cleaning Wipes</Text>
         </Wrapper>
         
     )
@@ -15,18 +16,22 @@ function Banner() {
 const Wrapper = styled.div`
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;    
     margin-top: 15px;
 `;
 
-const Text = styled.p`
+const Text = styled.span`
     margin-bottom: 0;
+    font-family: "Sora", sans-serif;
+	color: #39683c;
+    font-size: 55px;
 
 `;
 
-const BannerImg = styled.img`
-    height: 100px;
-    width: 500px;
+const Img = styled.img`
+    height: 200px;
+    width: 200px;
 `;
 
 export default Banner;

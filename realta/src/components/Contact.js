@@ -1,37 +1,30 @@
 import React from "react";
 import styled from "styled-components";
+import { HiOutlineMail } from "react-icons/hi";
+import { BiPhone } from "react-icons/bi";
+import { IconContext } from "react-icons";
 
 function Contact() {
 	return (
 		<>
-			<Wrapper>
-				<Header id="contact">Contact Us</Header>
-				<Ul>
-					<InfoName>Sheila Whalen</InfoName>
-					<InfoEmail href={`mailto:swhaler@realtalw.com`}>
-						swhaler@realtalw.com
-					</InfoEmail>
-					<InfoPhone>(514) 733-3223</InfoPhone>
-					{/* Put onClick() for email and call, email box next to contact maybe? */}
-				</Ul>
-				<FormWrap>
-					<Form>
-						<label for="e-name">Name</label>
-						<Input type="text" id="e-name" name="e-name" />
-						<label for="subject">Subject</label>
-						<Input type="text" id="e-subject" name="e-subject" />
-						<label for="e-body">How can we help?</label>
-						<textarea
-							type="text"
-							id="e-body"
-							name="e-subject"
-							cols="30"
-							rows="8"
-						></textarea>
-						<input type="submit" value="Submit"></input>
-					</Form>
-				</FormWrap>
-			</Wrapper>
+			<IconContext.Provider
+				value={{ color: "#39683c", verticalAlign: "middle", paddinTop: "5px" }}
+			>
+				<Wrapper>
+					<Header id="contact">Contact Us</Header>
+					<Div>
+						<InfoName>Sheila Whalen</InfoName>
+						<InfoEmail href={`mailto:swhaler@realtalw.com`}>
+							<HiOutlineMail style={{ fontSize: "25px", marginRight: "5px" }} />
+							swhaler@realtalw.com
+						</InfoEmail>
+						<InfoPhone>
+							<BiPhone style={{ fontSize: "25px", marginRight: "5px" }} />
+							(514) 733-3223
+						</InfoPhone>
+					</Div>
+				</Wrapper>
+			</IconContext.Provider>
 		</>
 	);
 }
@@ -49,35 +42,23 @@ const Header = styled.div`
 	font-size: 40px;
 `;
 
-const InfoPhone = styled.li`
+const InfoPhone = styled.p`
 	list-style-type: none;
 `;
 
 const InfoEmail = styled.a``;
 
-const InfoName = styled.li`
+const InfoName = styled.p`
 	font-size: 25px;
 	color: #39683c;
 	list-style-type: none;
 `;
 
-const Form = styled.form`
+
+const Div = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 50%;
-	justify-content: center;
-	margin-right: 20%;
-	margin-left: 40px;
+	
 `;
-
-const FormWrap = styled.div`
-	margin-bottom: 50px;
-`;
-
-const Input = styled.input`
-	width: 25%;
-`;
-
-const Ul = styled.ul``;
 
 export default Contact;

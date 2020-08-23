@@ -11,7 +11,7 @@ const ProductRender = () => {
 				<Wrapper>
 					<Product>
 						<ProductName>{data.productName}</ProductName>
-						<ProductSubHead>{data.productSubHead}</ProductSubHead>
+						<ProductSubHead>Size: {data.productSubHead}</ProductSubHead>
 						<ProductImg src={data.imgURL} />
 						<ProductDesc>{data.productDesc}</ProductDesc>
 					</Product>
@@ -39,6 +39,7 @@ const Product = styled.div`
 	margin-left: 25px;
 	margin-right: 25px;
 	width: 40%;
+	margin-bottom: 25px;
 `;
 
 const Li = styled.li`
@@ -59,6 +60,8 @@ const ProductSubHead = styled.span`
 const ProductImg = styled.img`
 	height: 215px;
 	width: 175px;
+	border-radius: 5px;
+	padding-bottom: 15px;
 `;
 
 const ProductDesc = styled.span`
